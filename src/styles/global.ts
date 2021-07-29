@@ -49,7 +49,37 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   [disabled] {
-    opacity: 0.6;
     cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  .new-transaction-modal {
+    background: var(--shape);
+    border-radius: .25rem;
+    color: var(--text-title);
+    max-width: 36rem;
+    width: 100%;
+
+    position: relative;
+
+    .btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  }
+
+  .new-transaction-modal-overlay {
+    background: rgba(0, 0, 0, .5);
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;

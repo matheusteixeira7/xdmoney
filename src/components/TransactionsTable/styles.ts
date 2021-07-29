@@ -9,6 +9,7 @@ export const Container = styled.div`
     max-width: 1120px;
     color: var(--text-body);
     border-spacing: 0 0.5rem;
+    margin: 0 auto;
     
     th {
       text-align: left;

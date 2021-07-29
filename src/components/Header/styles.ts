@@ -15,6 +15,8 @@ export const Content = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  margin: 0 auto;
+
   button {
     background: var(--blue-light);
     border: 0;
