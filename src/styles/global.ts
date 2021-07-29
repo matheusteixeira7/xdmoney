@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
+import { darken } from "polished";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   :root {
@@ -63,10 +64,15 @@ export const GlobalStyle = createGlobalStyle`
     position: relative;
 
     .btn-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-  }
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      transition: filter 200ms ease;
+
+      &:hover {
+        filter: brightness(0.5);
+      }
+    }
   }
 
   .new-transaction-modal-overlay {

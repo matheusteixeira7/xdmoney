@@ -1,4 +1,4 @@
-import { Container } from "./styles"
+import { Container } from "./styles";
 
 export const TransactionsTable = () => {
   return (
@@ -30,5 +30,5 @@ export const TransactionsTable = () => {
         </tbody>
       </table>
     </Container>
-  )
-}
+  );
+};

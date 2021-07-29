@@ -1,7 +1,7 @@
-import { Container, Content } from "./styles"
-import incomeImg from '../../assets/income.svg';
-import outcomeImg from '../../assets/outcome.svg';
-import totalImg from '../../assets/total.svg';
+import { Container, Content } from "./styles";
+import incomeImg from "../../assets/income.svg";
+import outcomeImg from "../../assets/outcome.svg";
+import totalImg from "../../assets/total.svg";
 
 export const Summary = () => {
   return (
@@ -30,5 +30,5 @@ export const Summary = () => {
         </div>
       </Content>
     </Container>
-  )
-}
+  );
+};

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { darken, opacify } from 'polished';  
+import { darken, opacify } from "polished";
 
 export const Container = styled.div`
   padding: 4rem 3rem;
@@ -8,16 +8,17 @@ export const Container = styled.div`
     margin-bottom: 2rem;
   }
 
-  input, button {
+  input,
+  button {
     width: 100%;
   }
 
   input {
     background: var(--background);
     padding: 1rem;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     border: 1px solid #ccc;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
 
     &::placeholder {
       color: var(--text-body);
@@ -29,12 +30,12 @@ export const Container = styled.div`
     color: #fff;
     height: 4rem;
     border: none;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     font-weight: 600;
     transition: background 200ms ease;
 
     &:hover {
-      background: ${darken(0.1, '#33CC95')};
+      background: ${darken(0.1, "#33CC95")};
     }
   }
 `;
@@ -49,36 +50,33 @@ interface RadioBoxProps {
 }
 
 const colors = {
-  green: opacify(.1, 'rgba(51, 204, 149, .1)'),
-  red: opacify(.1, 'rgba(229, 46, 77, .1)')
-}
+  green: opacify(0.1, "rgba(51, 204, 149, .1)"),
+  red: opacify(0.1, "rgba(229, 46, 77, .1)"),
+};
 
 export const RadioBox = styled.button<RadioBoxProps>`
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: ${(props) => props.isActive 
-    ? colors[props.activeColor] 
-    : 'transparent'}
-  ;
+  background: ${(props) =>
+    props.isActive ? colors[props.activeColor] : "transparent"};
 
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   border: 1px solid #d7d7d7;
   color: var(--text-title);
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   padding: 1rem;
   transition: border-color 200ms ease;
 
   &:hover {
-    border-color: ${darken(0.3, '#d7d7d7')};
+    border-color: ${darken(0.3, "#d7d7d7")};
   }
 
   &:first-child {
     margin-right: 1rem;
   }
-  
-  
+
   img {
     height: 1.25rem;
     margin-right: 1rem;

@@ -12,16 +12,17 @@ export const Content = styled.div`
   gap: 2rem;
   margin-top: -5rem;
   padding: 0 1rem;
-  
+
   div {
     background: var(--shape);
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     padding: 1.5rem 1.5rem;
 
     &:last-child {
       background: var(--green);
 
-      & header, strong {
+      & header,
+      strong {
         color: #fff;
       }
     }
@@ -36,7 +37,7 @@ export const Content = styled.div`
     strong {
       margin-top: 1rem;
       display: block;
-      
+
       font-size: 2rem;
       font-weight: 500;
       color: var(--text-title);

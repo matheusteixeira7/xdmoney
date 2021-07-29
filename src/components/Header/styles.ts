@@ -23,7 +23,7 @@ export const Content = styled.div`
     height: 3rem;
     padding: 0 2rem;
     color: white;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     transition: filter 200ms ease;
     font-size: 1rem;
 

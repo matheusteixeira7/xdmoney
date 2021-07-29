@@ -26,7 +26,7 @@ export const NewTransactionModal = ({
       <Container>
         <img
           src={closeImg}
-          alt="Close Button"
+          alt="Close Modal Button"
           onClick={onRequestClose}
           className="btn-close"
         />
@@ -37,8 +37,10 @@ export const NewTransactionModal = ({
         <TransactionTypeContainer>
           <RadioBox
             type="button"
-            onClick={ () => { setTransactionType('deposit') } }
-            isActive={transactionType === 'deposit'}
+            onClick={() => {
+              setTransactionType("deposit");
+            }}
+            isActive={transactionType === "deposit"}
             activeColor="green"
           >
             <img src={incomeImg} alt="Income" />
@@ -46,8 +48,10 @@ export const NewTransactionModal = ({
           </RadioBox>
           <RadioBox
             type="button"
-            onClick={ () => { setTransactionType('withdraw') } }
-            isActive={transactionType === 'withdraw'}
+            onClick={() => {
+              setTransactionType("withdraw");
+            }}
+            isActive={transactionType === "withdraw"}
             activeColor="red"
           >
             <img src={outcomeImg} alt="Outcome" />
