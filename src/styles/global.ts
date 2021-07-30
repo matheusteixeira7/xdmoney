@@ -1,5 +1,4 @@
-import { darken } from "polished";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   :root {
@@ -71,6 +70,7 @@ export const GlobalStyle = createGlobalStyle`
 
       &:hover {
         filter: brightness(0.5);
+        cursor: pointer;
       }
     }
   }
